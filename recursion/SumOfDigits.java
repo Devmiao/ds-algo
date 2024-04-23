@@ -17,11 +17,10 @@ public class SumOfDigits {
 
     private static int findSumOfDigits(int number) {
 
-        if (number <= 9){
+        if (number <= 9) {
             return number;
-        }
-        else {
-            return number%10 + findSumOfDigits(number/10);
+        } else {
+            return number % 10 + findSumOfDigits(number / 10);
         }
     }
 }
